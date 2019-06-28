@@ -4,22 +4,23 @@
 	<title>JEWELERY</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
-	<header>
+	<header  id="main">
 		<div class="container">
 			<nav class="clearfix">
-				<a class="logo" href="">JEWELERY</a>
+				<a class="logo" href="#main">JEWELERY</a>
 				<ul class="menu">
-					<li><a href="">Home.</a></li>
-					<li><a href="">News.</a></li>
-					<li><a href="">Work.</a></li>
-					<li><a href="">About.</a></li>
-					<li><a href="">Contact.</a></li>
-					<li><a class="soc_font" href="">L</a></li>
-					<li><a class="soc_font" href="">F</a></li>
+					<li><a href="#title">Home.</a></li>
+					<li><a href="#news">News.</a></li>
+					<li><a href="#work">Work.</a></li>
+					<li><a href="#about">About.</a></li>
+					<li><a href="#contact">Contact.</a></li>
+					<li><a class="soc_font" target="_blank" href="https://twitter.com">L</a></li>
+					<li><a class="soc_font" target="_blank" href="https://www.facebook.com">F</a></li>
 				</ul>
 			</nav>
-			<div class="column">
+			<div class="column" id="title">
 				<p>Creating realistic</p>
 				<H1>Workshop UNIQUE DECORATIONS</H1>
 				<a href="">
@@ -36,7 +37,7 @@
 		</div>
 	</header>
 	<article>
-		<div class="container clearfix">
+		<div class="container clearfix" id="news">
 			<div class="column_history"><h2>our<BR>interesting  history</h2>
 			</div>
 			<div class="column_history"><p>Science in the media always seems to be very one-sided. News media chasing sensations and much has been written about the research, "British scientists" and the low probability, but high-pro-file discoveries, which may take place in the future, not only paying attention to really important things. In addition, the Internet, magazines and television are often held discussions on</p>
@@ -45,7 +46,7 @@
 		</div>
 	</article>
 	<hr>
-	<div class="working">
+	<div class="working" id="work">
 		<div class="container">
 			<div class="how">
 				<h3>How does it work?</h3>
@@ -102,7 +103,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="why">
+	<div class="why" id="about">
 		<div class="container">
 			<div class="why_column">
 				<h2>why<br>choose<br>We?</h2>
@@ -210,15 +211,15 @@
 			</div>
 		</div>
 	</div>
-	<footer>
+	<footer id="contact">
 		<div class="container clearfix">
 			<nav class="clearfix">
 				<a class="logo" href="">JEWELERY</a>
 				<ul class="social">
-					<li><a class="soc_font" href="">F</a></li>
-					<li><a class="soc_font" href="">L</a></li>
-					<li><a class="soc_font" href="">D</a></li>
-					<li><a class="soc_font" href="">G</a></li>
+					<li><a class="soc_font" target="_blank" href="https://www.facebook.com/">F</a></li>
+					<li><a class="soc_font" target="_blank" href="https://twitter.com">L</a></li>
+					<li><a class="soc_font" target="_blank" href="https://vk.com">D</a></li>
+					<li><a class="soc_font" target="_blank" href="https://www.google.com">G</a></li>
 				</ul>
 			</nav>
 			<ul class="ender">
@@ -234,5 +235,15 @@
 			<p>Copyright © 2014. Softline.<br>All rights reserved.</p>
 		</div>
 	</footer>
+	<script>
+		$(document).ready(function(){
+		    $("nav").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1200);
+		    });
+		});
+	</script>
 </body>
 </html>
