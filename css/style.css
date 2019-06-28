@@ -9,6 +9,10 @@ a {
 	text-decoration: none;
 	color: rgb(255, 255, 255);
 }
+ul {
+	padding: 0;
+	margin: 0;
+}
 .clearfix::after {
   content: "";
   display: table;
@@ -145,12 +149,20 @@ hr {
   	line-height: 1.667;
   	text-align: center;
 }
+.plan {
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
 .plan li {
-	display: inline-block;
-	vertical-align: top;
-	width: 270px;
-	margin-right: 25px;
-	margin-bottom: 40px;
+	float: left;
+	width: 33.3%;
+	min-height: 280px;
+	list-style-type: none;
+	padding-right: 0;
+	padding-left: 20px;
+}
+.plan li:nth-child(3n+1) {
+	padding-left: 0;
 }
 .plan li h5 {
 	font-size: 18px;
@@ -230,14 +242,14 @@ hr {
 	margin-top: 50px;
 	margin-bottom: 60px;
 }
-.rings {
-	padding: 0;
-}
 .rings li {
 	float: left;
 	width: 25%;
 	margin: -4px 0 0 0;
-	list-style-type: none;
+	list-style-type: none;	
+}
+li a img:hover {
+	opacity: 0.7;
 }
 .rings li:last-child {
 	width: 50%;
@@ -271,21 +283,14 @@ hr {
 	padding-bottom: 50px;
 }
 .clients li {
-	display: inline-block;
-	vertical-align: top;
-	width: 290px;
+	float: left;
+	width: 33.3%;
 	min-height: 250px;
-	margin-right: 10px;
-	padding-bottom: 15px;
-}
-.client {
-	width: 250px;
-	float: right;
-	padding-left: 20px;
-}
-.clients li:nth-child(3n+3) {
-	padding-right: 0;
-	margin-right: 0;
+	list-style-type: none;
+	background-image: url(../pic/ico.png);
+	background-repeat: no-repeat;
+	padding-left: 60px;
+	padding-right: 10px;
 }
 .clients li h5 {
 	font-size: 18px;
@@ -306,10 +311,6 @@ hr {
   	font-family: "Roboto Light";
   	color: rgb(183, 183, 183);
   	line-height: 1.5;
-}
-
-.cients li img {
-	float: left;
 }
 .photoblog {
 	padding-top: 70px;
@@ -352,6 +353,8 @@ footer {
 .ender {
 	float: left;
 	list-style-type: none;
+	margin-top: 50px;
+
 }
 .ender li a {
 	font-size: 16px;
@@ -360,7 +363,6 @@ footer {
   	line-height: 2.25;
 }
 .ender li {
-	margin-left: -38px;
 	padding-right: 60px;
 }
 .ender li a:hover {
@@ -372,4 +374,5 @@ footer div p {
   	color: rgb(53, 52, 52);
   	line-height: 1.5;
   	text-align: right;
+  	margin-top: 56px;
 }
