@@ -1,5 +1,8 @@
 * {
 	box-sizing: border-box;
+	transition-property: all;
+  	transition-timing-function: ease-in-out;
+  	transition-duration: 0.3s;
 }
 html, body {
 	margin: 0;
@@ -30,6 +33,9 @@ header{
 	background-position: center;
 	min-height: 800px;
 	color: rgb(255, 255, 255);
+	transition-property: all;
+  	transition-timing-function: ease-in-out;
+  	transition-duration: 0.35s;
 }
 .logo {
   	font-size: 24px;
@@ -247,6 +253,7 @@ hr {
 	width: 25%;
 	height: 235px;
 	list-style-type: none;
+
 }
 .rings li a {
 	display: block;
@@ -259,6 +266,9 @@ li a img {
 }
 li a img:hover {
 	opacity: 0.9;
+	transition-property: all;
+  	transition-timing-function: ease-in-out;
+  	transition-duration: 0.35s;
 }
 .rings li:last-child {
 	width: 50%;
