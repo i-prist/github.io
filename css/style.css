@@ -263,7 +263,7 @@ body {
 }
 
 @media (max-width: 414px) {
-.header__menu:active {
+.header__menu:focus {
 	height:280px; 
 	width: 280px;
 	padding-left: 40px;
