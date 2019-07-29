@@ -263,12 +263,6 @@ body {
 }
 
 @media (max-width: 414px) {
-.header__menu:focus {
-	height:280px; 
-	width: 280px;
-	padding-left: 40px;
-	transition: 0.15s linear;
-}
 .main-block {
 		background-position: right 10% bottom 30%;
 }
