@@ -46,7 +46,7 @@ body {
 }
 .main-block {
 	background-color: rgb(11, 156, 179);
-	background-image: url(pic/arrow.png);
+	background-image: url(../pic/arrow.png);
 	background-repeat: no-repeat;
 	background-position: right 20% bottom 30%;
 	transition: 0.15s linear;
@@ -86,7 +86,7 @@ body {
 .swiper__right {
 	width: 23%;
 	background-color: rgb(188, 49, 131);
-	background-image: url(pic/arrow.png);
+	background-image: url(../pic/arrow.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	transition: 0.25s linear;
@@ -110,7 +110,7 @@ body {
 	transition: 0.15s linear;
 }
 .album__photo:first-child {
-	background-image: url(pic/arrow.png);
+	background-image: url(../pic/arrow.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	transition: 0.15s linear;
@@ -204,7 +204,7 @@ body {
 	height: 70px;
 	width: 70px;
 	background-color: rgb(32, 37, 41);
-	background-image: url(pic/menu.png);
+	background-image: url(../pic/menu.png);
 	background-repeat: no-repeat;
 	background-position: top 23px right 18px;
 	transition: 0.15s linear;
