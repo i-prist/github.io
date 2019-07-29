@@ -302,14 +302,17 @@ body {
 	width: 280px;
 }
 .main-block h1 {
+	padding: 100px 35px 36px 35px;
 	font-size: 25px;
 	line-height: 25px;
 }
 .main-block h2 {
 	font-size: 18px;
+	padding-left: 35px;
 }
 .swiper__content {
 	max-height: 12px;
+	margin-left: 35px;
 }
 .swiper__content h2 {
 	font-size: 12px;	
@@ -319,10 +322,10 @@ body {
 }
 .article__title {
 	font-size: 18px;
-	padding: 25px 0 12px 25px;
+	padding: 25px 0 12px 35px;
 }
 .article__column {
-	padding: 0px 25px 50px 25px;
+	padding: 0px 35px 50px 35px;
 }
 .article__column p {
 	margin-bottom: 15px;
