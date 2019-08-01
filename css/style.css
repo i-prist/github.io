@@ -104,21 +104,28 @@ body {
 	background-color: rgb(91, 15, 161);
 	width: 33.33%;
 }
-.album__photo img {
-	height: 100%;
-	transition: 0.15s linear;
+.photo {
+  	padding-top: 86%;
+  	background-size: 100%;
 }
-.album__photo:first-child {
+.album__photo:nth-child(1) > .photo {
 	background-image: url(../pic/arrow.png);
 	background-repeat: no-repeat;
 	background-position: center center;
-	transition: 0.15s linear;
+	background-size: initial;
+	transition: 0.25s linear;
 }
-.album:hover > .album__photo:first-child {
+.album__photo:nth-child(2) > .photo {
+	background-image: url(../pic/photo1.jpg);
+}
+.album__photo:nth-child(3) > .photo {
+	background-image: url(../pic/photo2.jpg);
+}
+.album:hover > .album__photo:first-child .photo {
 	background-position: right 33% center;
 	transition: 0.15s linear;
 }
-.album:hover > .album__photo img {
+.album:hover > .album__photo .photo {
 	opacity: 0.5;
 	transition: 0.15s linear;
 }
@@ -245,7 +252,6 @@ body {
 }
 .album__photo {
 	width: 100%;
-	height: 533px;
 }
 .article__title {
 	font-size: 20px;
@@ -273,11 +279,7 @@ body {
 	margin: 75px 0 75px 50px;
 }
 .swiper__content h2 {
-	font-size: 13px;	
-}
-.album__photo {
-	width: 100%;
-	height: 414px;
+	font-size: 13px;
 }
 }
 
@@ -314,10 +316,7 @@ body {
 	margin-left: 35px;
 }
 .swiper__content h2 {
-	font-size: 12px;	
-}
-.album__photo {
-	height: 375px;
+	font-size: 12px;
 }
 .article__title {
 	font-size: 18px;
@@ -368,10 +367,7 @@ body {
 	margin: 35px 0 35px 25px;
 }
 .swiper__content h2 {
-	font-size: 10px;	
-}
-.album__photo {
-	height: 276px;
+	font-size: 10px;
 }
 .article__title {
 	font-size: 18px;
