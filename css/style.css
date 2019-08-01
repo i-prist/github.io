@@ -105,7 +105,6 @@ body {
 	width: 33.33%;
 }
 .album__photo img {
-	width: 100%;
 	height: 100%;
 	transition: 0.15s linear;
 }
