@@ -7,27 +7,28 @@
 	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-	<header>
+	<header id="main">
 		<div class="container">
 			<nav class="header__nav">
-				<a href="">
+				<a href="#main">
 					<div class="logo">
 						<h1>tajam</h1>
 					</div>
 				</a>
 				<ul class="header__menu">
-					<a href=""><li>Home</li></a>
-					<a href=""><li>About</li></a>
-					<a href=""><li>Expertise</li></a>
-					<a href=""><li>Teams</li></a>
-					<a href=""><li>Works</li></a>
-					<a href=""><li>People say</li></a>
-					<a href=""><li>Contact</li></a>
+					<a href="#title"><li>Home</li></a>
+					<a href="#about"><li>About</li></a>
+					<a href="#expertise"><li>Expertise</li></a>
+					<a href="#team"><li>Teams</li></a>
+					<a href="#works"><li>Works</li></a>
+					<a href="#reviews"><li>People say</li></a>
+					<a href="#contact"><li>Contact</li></a>
 				</ul>
 			</nav>
-			<div class="header__slider">
+			<div class="header__slider" id="title">
 				<h1>We Are Awesome Creative Agency</h1>
 				<hr>
 				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
@@ -41,7 +42,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="article container">
+	<section class="article container" id="about">
 		<div class="article__pic">
 			<img src="pic/article_logo.png">
 		</div>
@@ -58,7 +59,7 @@
 			Whatch our story
 		</div>
 	</section>
-	<section class="container">
+	<section class="container" id="expertise">
 		<ul class="expertise">
 			<li class="expertise__service">
 				<h2 class="title">Expertise</h2>
@@ -91,7 +92,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class="team_background">
+	<section class="team_background" id="team">
 		<ul class="team container">
 			<li class="team__info">
 				<h2 class="title">Meet our amazing team</h2>
@@ -132,7 +133,7 @@
 			</li>
 		</ul>
 	</section>
-	<section class="works">
+	<section class="works" id="works">
 		<h2 class="title">Our works</h2>
 		<a class="link" href="">See All Project in dribbble ></a>
 		<a href=""><img class="work" src="pic/works/1.jpg"></a>
@@ -149,7 +150,7 @@
 		<a href=""><img class="work" src="pic/works/12.jpg"></a>
 		<button class="button">Load more</button>
 	</section>
-	<section class="reviews">
+	<section class="reviews" id="reviews">
 		<div class="container">
 			<h2>“</h2>
 			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
@@ -166,20 +167,20 @@
 			</div>
 		</div>
 	</section>
-	<section class="feedback container">
+	<section class="feedback container" id="contact">
 		<form class="feedback__message">
 			<h3 class="title">Give us a good news</h3>
 			<div class="form__group">
-				<input class="feedback__input" type="text" placeholder=" "><label class="feedback__label">Name</label>
+				<input class="feedback__input" type="text" placeholder=" " required><label class="feedback__label">Name</label>
 			</div>
 			<div class="form__group">
-				<input class="feedback__input" type="email" placeholder=" "><label class="feedback__label">Email</label>
+				<input class="feedback__input" type="email" placeholder=" " required><label class="feedback__label">Email</label>
 			</div>
 			<div class="form__group">
 				<input class="feedback__input" type="text" placeholder=" "><label class="feedback__label">Subject</label>
 			</div>
 			<div class="form__group">
-				<textarea class="feedback__input feedback__input_big" placeholder="Your Message"></textarea>
+				<textarea class="feedback__input feedback__input_big" placeholder="Your Message" required></textarea>
 			</div>
 			<button class="button">Submit</button>
 		</form>
@@ -216,12 +217,12 @@
 					<button class="mailing__button"></button>
 				</form>
 				<ul class="socials">
-					<li class="facebook"><a href=""></a></li>
-					<li class="tweetter"><a href=""></a></li>
-					<li class="dribbble"><a href=""></a></li>
-					<li class="instagram"><a href=""></a></li>
-					<li class="google-plus"><a href=""></a></li>
-					<li class="youtube"><a href=""></a></li>
+					<a href="https://www.facebook.com/" target="_blank"><li class="facebook"></li></a>
+					<a href="https://twitter.com/" target="_blank"><li class="tweetter"></li></a>
+					<a href="https://dribbble.com/" target="_blank"><li class="dribbble"></li></a>
+					<a href="https://www.instagram.com/" target="_blank"><li class="instagram"></li></a>
+					<a href="https://www.google.com/" target="_blank"><li class="google-plus"></li></a>
+					<a href="https://www.youtube.com/" target="_blank"><li class="youtube"></li></a>
 				</ul>
 			</div>
 			<ul class="footer__nav">
@@ -232,5 +233,17 @@
 			<p class="footer__copy">Copyright © 2015 - Tajem Creative</p>
 		</div>
 	</footer>
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1200);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
 </body>
 </html>
