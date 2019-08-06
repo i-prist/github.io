@@ -372,8 +372,9 @@ header {
 	transition: 0.15s linear;
 }
 .works .button {
-	width: 20%;
-	margin: 70px auto;
+	margin: 70px 80px;
+	padding-right: 40px;
+	padding-left: 40px;
 }
 .reviews {
 	background: url(../pic/BG_reviews.jpg) no-repeat;
