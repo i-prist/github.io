@@ -372,7 +372,8 @@ header {
 	transition: 0.15s linear;
 }
 .works .button {
-	margin: 70px 300px;
+	width: 20%;
+	margin: 70px auto;
 }
 .reviews {
 	background: url(../pic/BG_reviews.jpg) no-repeat;
@@ -459,6 +460,9 @@ header {
   	margin-top: 60px;
   	margin-bottom: 35px;
 }
+.form__group {
+	position: relative;
+}
 .feedback__input {
 	border: rgba(229, 229, 229) 1px solid;
 	width: 85%;
@@ -470,10 +474,10 @@ header {
   	padding-left: 5%;
 }
 .feedback__label {
-	position: relative;
+	position: absolute;
 	color: rgba(65, 61, 75, 0.7);
-  	bottom: 0;
-  	left: -80%;
+	left: 30px;
+	top: 15px;
   	transition: 0.15s linear;
 }
 .feedback__input_big {
@@ -483,9 +487,9 @@ header {
 }
 .feedback__input:focus ~ .feedback__label, 
 .feedback__input:not(:placeholder-shown) ~ .feedback__label {
-	bottom: 33px;
+	top: -16px;
 	font-size: 12px;
-	left: -83%;
+	left: 20px;
 	color: rgba(65, 61, 75, 1);
 	transition: 0.15s linear;
 }
@@ -656,6 +660,7 @@ header {
 .footer__copy {
 	width: 50%;
 	text-align: right;
+	margin-bottom: 40px;
 }
 .footer__nav li:hover {
 	color: rgb(0, 224, 208);
@@ -758,10 +763,7 @@ header {
 	text-align: center;
 }
 .feedback__input {
-	width: 91%;
-}
-.feedback__label {
-  	left: -85%;
+	width: 95%;
 }
 .feedback .button {
 	padding-right: 50px;
@@ -828,7 +830,7 @@ header {
 .footer__copy {
 	width: 100%;
 	text-align: center;
-	margin: 30px auto 40px;
+	margin: 30px auto;
 }
 .footer__nav  {
 	justify-content: space-around;
