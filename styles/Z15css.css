@@ -585,7 +585,6 @@ a:hover {
 		margin-top: 40px;
     	margin-bottom: 70px;
 		width: 65%;
-		font-size: ;
 	}
 	.links {
 		flex-wrap: wrap;
@@ -646,4 +645,5 @@ a:hover {
 .top .gift {
 	padding: 10px 10px 10px 37px;
 	background-position: left 8px top 6px;
+}
 }
