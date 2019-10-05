@@ -631,3 +631,19 @@ a:hover {
 		padding: 10px 10px 10px 50px;
 	}
 }
+@media (max-width: 430px) {
+	.social-btns {
+	display: none;
+}
+}
+
+@media (max-width: 340px) {
+.mods__text {
+	font-size: 17px;
+	margin-top: 22px;
+	margin-bottom: 42px;
+}
+.top .gift {
+	padding: 10px 10px 10px 37px;
+	background-position: left 8px top 6px;
+}
