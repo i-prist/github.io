@@ -1,124 +1,168 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">
-	<meta name="msapplication-TileColor" content="#00aba9">
-	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="./style/style.css">
-	<title>O-ZONE</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+	<link rel="stylesheet" href="styles/Z15css.css">
+	<title>G-Energy</title>
 </head>
 
 <body>
-
 	<header>
-		<nav>
+		<div class="top">
 			<div class="container">
-				<div class="row justify-content-between align-items-center">
-					<a class="logo" href="/"></a>
-					<div class="catalog-button">
-						<button><span class="catalog-button_burger"></span>Каталог</button>
-						<div class="catalog">
-							<ul class="catalog-list">
-
-							</ul>
+				<a class="gift" href="">
+					<span class="gift__now">Получите </span>подарок <span class="gift__now">сейчас</span>
+				</a>
+				<form action="" class="search">
+					<input type="text" class="search__input" placeholder="ПОИСК ПО САЙТУ">
+					<input class="search__submit" data-role="submit" type="submit" id="submit" value="" title="">
+				</form>
+				<div class="toolbar">
+					<div class="dropdown">
+						<a class="btn dropdown-toggle btn-language" href="#" role="button" id="dropdownMenuLink"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="./pic/ru.gif" alt="">
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#"><img src="./pic/ru.gif" alt=""></a>
+							<a class="dropdown-item" href="#"><img src="./pic/eng.gif" alt=""></a>
+							<a class="dropdown-item" href="#"><img src="./pic/ital.png" alt=""></a>
+							<a class="dropdown-item" href="#"><img src="./pic/span.png" alt=""></a>
 						</div>
 					</div>
-					<div class="search">
-						<div class="search-wrapper">
-							<input class="search-wrapper_input" type="text">
-						</div>
-						<div class="search-btn">
-							<button></button>
-						</div>
+					<div class="social-btns">
+						<a href="" class="fb-btn"></a>
+						<a href="" class="yt-btn"></a>
 					</div>
-					<a href="#" id="cart">
-						<span class="counter">0</span>
-						<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-								<path fill="currentColor" fill-rule="nonzero"
-									d="M6 6a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2h5.133L21.82 18.496A4 4 0 0 1 17.85 22H6.149a4 4 0 0 1-3.969-3.504L.867 8H6V6zm6 2a1 1 0 0 1 0 2H3.133l1.03 8.248A2 2 0 0 0 6.149 20h11.704a2 2 0 0 0 1.984-1.752L20.867 10H16V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2h4z">
-								</path>
-							</svg></span>
-						<span class="desc">Корзина</span>
+					<a class="mail-btn" href="">
+						<span class="connect">Свяжитесь с нами</span>
 					</a>
 				</div>
 			</div>
-		</nav>
+		</div>
+		<div class="header">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="home" href="#"></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">O бренде</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Продукция</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Подбор масла</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Где купить</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">G-Energy service</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Новости</a>
+							</li>
+						</ul>
+						<a class="navbar-brand" href="#">
+								<img src="./pic/logo.png" alt="">
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
 	</header>
-
-	<main>
+	<section class="promo">
 		<div class="container">
-			<div class="row">
-				<div class="col-3 col-xl-2 d-none d-lg-block">
-					<div class="filter">
-						<div class="filter-title">
-							<h5>Фильтр</h5>
-						</div>
-						<div class="filter-price">
-							<div class="filter-price_title">
-								Цена
-							</div>
-							<form>
-								<div class="filter-price_range">
-									<div class="filter-price_input-wrapper">
-										<label for="min" class="filter-price_label">от</label>
-										<input id="min" class="filter-price_input">
-									</div>
-									<div class="filter-price_input-wrapper">
-										<label for="max" class="filter-price_label">до</label>
-										<input id="max" class="filter-price_input"></div>
-								</div>
-							</form>
-						</div>
-						<div class="filter-check">
-							<label class="filter-check_label">
-								<input type="checkbox" class="filter-check_checkbox" id="discount-checkbox">
-								<span class="filter-check_checkmark"></span>
-								<span class="filter-check_label-text">Акция</span>
-							</label>
-						</div>
-					</div>
+			<div class="acf">
+				<H2 class="acf__title">Технология ACF</H2>
+				<p class="acf__text">Adaptive Components Formula</p>
+			</div>
+			<ul class="mods">
+				<li class="mods__item">
+					<div class="mods__img"><img src="./pic/teh1.png" alt=""></div>
+					<p class="mods__text">Форсированный режим работы</p>
+				</li>
+				<li class="mods__item">
+					<div class="mods__img"><img src="./pic/teh2.png" alt=""></div>
+					<p class="mods__text">Зимний режим эксплуатации</p>
+				</li>
+				<li class="mods__item">
+					<div class="mods__img"><img src="./pic/teh3.png" alt=""></div>
+					<p class="mods__text">Режим городской пробки</p>
+				</li>
+				<li class="mods__item">
+					<div class="mods__img"><img src="./pic/teh4.png" alt=""></div>
+					<p class="mods__text">Режим загородной трассы</p>
+				</li>
+				<li class="mods__item">
+					<div class="mods__img"><img src="./pic/teh5.png" alt=""></div>
+					<p class="mods__text">Узнайте<br>больше</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="links">
+				<a class="parent" href=""></a>
+				<ul class="sosials">
+					<li><a class="sosials__fb ico-big" href=""></a></li>
+					<li><a class="sosials__yt ico-big" href=""></a></li>
+					<li><a class="sosials__mail ico-big" href=""></a></li>
+				</ul>
+				<ul class="partners">
+					<li><a class="partners__chery" href=""></a></li>
+					<li><a class="partners__lifan" href=""></a></li>
+				</ul>
+			</div>
+			<div class="loyalty">
+				<ul class="like">Мне нравится
+					<li><a class="like__fb ico" href=""></a></li>
+					<li><a class="like__vk ico" href=""></a></li>
+					<li><a class="like__tw ico" href=""></a></li>
+				</ul>
+				<ul class="share">Поделиться
+					<li><a class="share__fb ico" href=""></a></li>
+					<li><a class="share__vk ico" href=""></a></li>
+					<li><a class="share__ok ico" href=""></a></li>
+					<li><a class="share__tw ico" href=""></a></li>
+				</ul>
+			</div>
+			<div class="downbar">
+				<div class="copyright">
+					<p>© 2009–2014, «Газпромнефть - смазочные материалы», <a class="copyright__contacts"
+							href="">Контакты</a></p>
 				</div>
-				<div class="col-12 col-lg-9 col-xl-10">
-					<div class="container">
-						<div class="row no-gutters goods">
-							<!-- КАРТОЧКИ ТОВАРОВ -->
-							<!-- END КАРТОЧКИ ТОВАРОВ -->
-						</div>
-					</div>
-
+				<ul class="language">
+					<li><a class="language__rus lang-change" href="">Русский</a></li>
+					<li><a class="language__eng lang-change" href="">English</a></li>
+					<li><a class="language__ital lang-change" href="">Italian</a></li>
+					<li><a class="language__srp lang-change" href="">Српски</a></li>
+				</ul>
+				<div class="creator">
+					<p>Создание сайта – <a class="creator__name" href="">«i-prist»</a></p>
 				</div>
 			</div>
 		</div>
+	</footer>
 
-
-	</main>
-
-	<div class="cart">
-		<div class="cart-body">
-			<div class="cart-title">Корзина</div>
-			<div class="cart-total">Общая сумма: <span>0</span> руб</div>
-
-			<div class="cart-wrapper">
-				<div id="cart-empty">
-					Ваша корзина пока пуста
-				</div>
-			</div>
-			<button class="btn btn-primary cart-confirm">Оформить заказ</button>
-			<div class="cart-close">
-
-			</div>
-		</div>
-	</div>
-	<script src="./src/index.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
