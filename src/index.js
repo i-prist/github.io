@@ -6,10 +6,12 @@ function takeGift() {
 
     btnGift.addEventListener('click', () => {
         modalGift.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
     });
 
     closeBtn.addEventListener('click', () => {
         modalGift.style.display = 'none';
+        document.body.style.overflow = '';
     });
 }
 function thx() {
@@ -22,13 +24,16 @@ function thx() {
     btnTake.addEventListener('click', () => {
         modalGift.style.display = 'none';
         modalThx.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
     });
 
     closeBtn.addEventListener('click', () => {
         modalThx.style.display = 'none';
+        document.body.style.overflow = '';
     });
     endBtn.addEventListener('click', () => {
         modalThx.style.display = 'none';
+        document.body.style.overflow = '';
     });
 }
 takeGift();
