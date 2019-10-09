@@ -16,9 +16,9 @@
 	<header>
 		<div class="top">
 			<div class="container">
-				<a class="gift" href="">
+				<div class="gift" href="" id="gift">
 					<span class="gift__now">Получите </span>подарок <span class="gift__now">сейчас</span>
-				</a>
+				</div>
 				<form action="" class="search">
 					<input type="text" class="search__input" placeholder="ПОИСК ПО САЙТУ">
 					<input class="search__submit" data-role="submit" type="submit" id="submit" value="" title="">
@@ -160,7 +160,40 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-gift">
+		<div class="modal-gift__close close"></div>
+		<h3 class="modal-gift__title">Полезные советы от G-Energy</h3>
+		<div class="modal-gift__strip">
+			<p>Получите специальное издание<br><span class="text-bold"><span class="text-orange">«Полезные советы АВТОМОБИЛИСТУ» </span>бесплатно!</span></p>
+			<div class="treangle"></div>
+		</div>
+		<div class="modal-gift__img"><img src="./pic/modal-gift__img.jpg.png" alt=""></div>
+		<form action="" class="modal-gift__form">
+			<input type="text" class="modal-gift__input" placeholder="ВАШЕ ИМЯ" required>
+			<input type="email" class="modal-gift__input" placeholder="ВАШ E-mail" required>
+			<select type="text" class="modal-gift__input">
+				<option value="0">ВЫБЕРИТЕ ВАШ ГОРОД</option>
+				<option value="2">МОСКВА</option>
+				<option value="3">САНКТ-ПЕТЕРБУРГ</option>
+				<option value="4">КРАСНОДАР</option>
+				<option value="5">НОВОСИБИРСК</option>
+				<option value="6">ЕКАТЕРИНБУРГ</option>
+				<option value="7">ИРКУТСК</option>
+				<option value="8">ВЛАДИВОСТОК</option>
+				<option value="9">Другой</option>
+			</select>
+			<button class="modal-gift__button button" type="submit" id="take-gift">Продолжить</button>
+		</form>
+	</div>
+	<div class="modal-thx">
+		<div class="modal-thx__close close"></div>
+		<h3 class="modal-thx__title">Спасибо за ваше участие</h3>
+		<h4 class="modal-thx__text">Вам на почту выслано письмо с инструкцией</h4>
+		<button class="modal-thx__button button" id="end">Закрыть окно</button>
+		<p class="modal-thx__hint">Если вы не получили письмо, проверьте папку спам</p>
+	</div>
 
+	<script src="./src/index.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>

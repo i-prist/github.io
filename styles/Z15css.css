@@ -53,6 +53,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: left 20px top 6px;
 	transition: 0.3s linear;
+	cursor: pointer;
 }
 .search {
 	flex: auto;
@@ -437,6 +438,160 @@ a:hover {
 	justify-content: flex-end;
 	align-items: center;
 }
+.modal-gift {
+	display: none;
+	flex-wrap: wrap;
+	position: fixed;
+	z-index: 100;
+	right: 50%;
+	top: 10%;
+	transform: translateX(50%);
+	border-radius: 25px;
+	background-color: rgb(255, 255, 255);
+}
+.close {
+	width: 15px;
+	height: 16px;
+	background: url(../pic/close.png);
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+.close:hover {
+	background: url(../pic/close_link.png);
+}
+.modal-gift__title {
+	width: 100%;
+	font-size: 38px;
+	font-family: "DIN Pro";
+	color: rgb(31, 36, 42);
+	text-transform: uppercase;
+	text-align: center;
+	padding: 60px 45px 30px;
+}
+.modal-gift__strip {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	background-color: rgb(230, 232, 237);
+	font-size: 26px;
+	font-family: "DIN Pro";
+	color: rgb(31, 36, 42);
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px 70px 6px;
+	line-height: 1.2;
+}
+.modal-gift__strip .text-orange {
+	color: rgb(233, 95, 14);
+}
+.modal-gift__strip .text-bold {
+	font-weight: 700;
+}
+.treangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-top: 14px solid rgb(230, 232, 237);;
+	margin: 0 auto;
+	bottom: -14px;
+}
+.modal-gift__img {
+	width: 40%;
+	margin-top: 75px;
+	border-radius: 25px;
+}
+.modal-gift__form {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+.modal-gift__input {
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(164, 164, 164);
+	background-color: rgb(255, 255, 255);
+	border-radius: 25px;
+	height: 52px;  
+	margin-bottom: 20px;
+	margin-right: 50px;
+	font-size: 24px;
+	font-family: "DIN Pro";
+	color: rgb(31, 36, 42);
+	line-height: 1.25;
+	text-align: left;
+	padding-left: 18px;
+}
+.button {
+	border-color: rgb(233, 95, 14);
+	background-color: rgb(233, 95, 14);
+	border-radius: 25px;
+	height: 52px;  
+	font-size: 24px;
+	font-family: "DIN Pro";
+	line-height: 1.25;
+	color: white;
+	text-align: center;
+	margin-right: 50px;
+	text-transform: uppercase;
+}
+.button:hover {
+	color: rgb(233, 95, 14);
+	background-color: white;
+}
+.modal-thx {
+	display: none;
+	flex-wrap: wrap;
+	position: fixed;
+	z-index: 101;
+	right: 50%;
+	top: 30%;
+	transform: translateX(50%);
+	border-radius: 25px;
+	background-color: rgb(255, 255, 255);
+}
+.modal-thx__title {
+	width: 100%;
+	font-size: 38px;
+	font-family: "DIN Pro";
+	color: rgb(31, 36, 42);
+	text-transform: uppercase;
+	text-align: center;
+	padding: 60px 40px 10px;
+	font-weight: 700;
+}
+.modal-thx__text {
+	width: 100%;
+	font-size: 30px;
+	font-family: "DIN Pro";
+	color: rgb(31, 36, 42);
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px 60px 15px;
+}
+.modal-thx__button {
+	margin: auto;
+	width: 50%;
+}
+.modal-thx__hint {
+  	font-size: 18px;
+  	font-family: "DIN Pro";
+  	color: rgb(102, 102, 102);
+  	text-transform: uppercase;
+  	line-height: 2.222;
+ 	text-align: center;
+	width: 100%;
+	margin:15px auto 45px;
+}
+
+
+
 
 @media (max-width: 1450px) {
 	.navbar-expand-lg .navbar-nav .nav-link{
