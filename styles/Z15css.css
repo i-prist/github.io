@@ -438,16 +438,29 @@ a:hover {
 	justify-content: flex-end;
 	align-items: center;
 }
+.modal-shadow {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 99;
+	overflow: auto;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}
 .modal-gift {
+	position: relative;
+	overflow: auto;
 	display: none;
 	flex-wrap: wrap;
-	position: fixed;
 	z-index: 100;
-	right: 50%;
-	top: 10%;
-	transform: translateX(50%);
 	border-radius: 25px;
 	background-color: rgb(255, 255, 255);
+	height: 610px;
+	max-width: 700px;
 }
 .close {
 	width: 15px;
@@ -468,7 +481,8 @@ a:hover {
 	color: rgb(31, 36, 42);
 	text-transform: uppercase;
 	text-align: center;
-	padding: 60px 45px 30px;
+	padding: 35px 10px 25px;
+	line-height: 45px;
 }
 .modal-gift__strip {
 	position: relative;
@@ -483,7 +497,7 @@ a:hover {
 	text-transform: uppercase;
 	text-align: center;
 	padding: 20px 70px 6px;
-	line-height: 1.2;
+	line-height: 33px;
 }
 .modal-gift__strip .text-orange {
 	color: rgb(233, 95, 14);
@@ -546,13 +560,11 @@ a:hover {
 	background-color: white;
 }
 .modal-thx {
+	width: 50%;
 	display: none;
 	flex-wrap: wrap;
-	position: fixed;
+	position: relative;
 	z-index: 101;
-	right: 50%;
-	top: 30%;
-	transform: translateX(50%);
 	border-radius: 25px;
 	background-color: rgb(255, 255, 255);
 }
@@ -719,6 +731,14 @@ a:hover {
 		order: 3;
 		justify-content: center;
 	}
+	.modal {
+		width: 95%;
+	}
+}
+@media (max-width: 664px) {
+	.modal {
+		height: 630px;
+	}
 }
 @media (max-width: 640px) {
 	.container {
@@ -776,6 +796,33 @@ a:hover {
 		margin: 0;
 		margin-bottom: 15px;
 	}
+	.modal-gift__img {
+		display: none;
+	}
+	.modal-gift__form {
+		width: 100%;
+	}
+	.modal-gift__input, .button {
+		margin-left: 50px;
+	}
+	.modal-gift__strip {
+		padding: 17px 10px 6px;
+		font-size: 23px;
+	}
+	.modal-gift__title {
+		font-size: 30px;
+	}
+}
+@media (max-width: 500px) {
+	.modal-gift__title {
+		padding: 20px 10px 0px;
+	}
+	.modal-gift__form {
+		margin-top: 25px;
+	}
+	.modal {
+		height: 590px;
+	}
 }
 @media (max-width: 480px) {
 	.container {
@@ -790,7 +837,21 @@ a:hover {
 	display: none;
 }
 }
-
+@media (max-width: 400px) {
+	.modal-gift__title {
+		font-size: 26px;
+	}
+	.modal-gift__strip {
+	font-size: 20px;
+	}
+	.modal-gift__input, .button {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.modal {
+		height: 625px;
+	}
+}
 @media (max-width: 340px) {
 .mods__text {
 	font-size: 17px;
