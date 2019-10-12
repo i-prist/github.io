@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -9,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
 	<link rel="stylesheet" href="styles/Z15css.css">
 	<link rel="stylesheet" href="styles/font.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ea2ca1dd-2079-4795-a2c4-de80c57ec3ec&lang=ru_RU" type="text/javascript"></script>
 	<title>G-Energy</title>
 </head>
 
@@ -116,6 +118,11 @@
 			</ul>
 		</div>
 	</section>
+	<section>
+		<div class="ya-map">
+			<div id="map" style="width: 100%; height: 500px"></div>
+		</div>
+	</section>
 	<footer class="footer">
 		<div class="container">
 			<div class="links">
@@ -170,7 +177,7 @@
 				<div class="treangle"></div>
 			</div>
 			<div class="modal-gift__img"><img src="./pic/modal-gift__img.jpg.png" alt=""></div>
-			<form action="" class="modal-gift__form">
+			<form action="" class="modal-gift__form" id="form-gift">
 				<input type="text" class="modal-gift__input" placeholder="ВАШЕ ИМЯ" required>
 				<input type="email" class="modal-gift__input" placeholder="ВАШ E-mail" required>
 				<select type="text" class="modal-gift__input">
@@ -184,7 +191,7 @@
 					<option value="8">ВЛАДИВОСТОК</option>
 					<option value="9">Другой</option>
 				</select>
-				<button class="modal-gift__button button" type="submit" id="take-gift">Продолжить</button>
+				<button class="modal-gift__button button" id="take-gift">Продолжить</button>
 			</form>
 		</div>
 

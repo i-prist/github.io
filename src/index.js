@@ -1,4 +1,5 @@
 'use strict';
+
 function takeGift() {
     const btnGift = document.getElementById('gift');
     const modalGift = document.querySelector('.modal-gift');
@@ -10,13 +11,13 @@ function takeGift() {
         modalGift.style.display = 'flex';
         document.body.style.overflow = 'hidden';
     });
-
     closeBtn.addEventListener('click', () => {
         modalGift.style.display = 'none';
         shadow.style.display = 'none';
         document.body.style.overflow = '';
     });
 }
+
 function thx() {
     const modalGift = document.querySelector('.modal-gift');
     const btnTake = document.getElementById('take-gift');
@@ -28,6 +29,7 @@ function thx() {
     btnTake.addEventListener('click', () => {
         modalGift.style.display = 'none';
         modalThx.style.display = 'flex';
+       
     });
 
     closeBtn.addEventListener('click', () => {
@@ -41,5 +43,14 @@ function thx() {
         document.body.style.overflow = '';
     });
 }
+
+ymaps.ready(init);
+function init(){ 
+var myMap = new ymaps.Map("map", {
+    center: [55.76, 37.64],
+    zoom: 10
+     });
+ }
+
 takeGift();
 thx();
