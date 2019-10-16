@@ -3,55 +3,41 @@
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.751574, 37.573856],
-            zoom: 9
+            zoom: 9,
+            controls: []
         }, {
             searchControlProvider: 'yandex#search'
         }),
 
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
+        myPlacemark1 = new ymaps.Placemark(myMap.getCenter(), {
+            balloonContentHeader: '<a href = "#">Рога и копыта</a><br>' +
+            '<span class="description">Сеть кинотеатров</span>',
+        balloonContentBody:
+            '<a href="tel:+7-123-456-78-90">+7 (123) 456-78-90</a><br/>' +
+            '<b>Ближайшие сеансы</b> <br/> Сеансов нет.',
+        balloonContentFooter: 'Информация предоставлена:<br/>OOO "Рога и копыта"',
+        hintContent: 'Рога и копыта'
         }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
-            // Своё изображение иконки метки.
             iconImageHref: 'pic/market_service.png',
-            // Размеры метки.
             iconImageSize: [36, 38],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
             iconImageOffset: [-5, -38]
         }),
 
-        myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+        myPlacemark2 = new ymaps.Placemark([55.661574, 37.573856], {
             hintContent: 'Собственный значок метки',
             balloonContent: 'А эта не менее красивая'
         }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
+           
+            iconLayout: 'default#image',
             iconImageHref: 'pic/marker_market.png',
-            // Размеры метки.
             iconImageSize: [36, 38],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
             iconImageOffset: [-24, -24],
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
-            // Макет содержимого.
-            iconContentLayout: MyIconContentLayout
         });
 
     myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemarkWithContent);
+        .add(myPlacemark1)
+        .add(myPlacemark2);
 });
 
 
