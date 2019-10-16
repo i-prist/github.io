@@ -527,6 +527,7 @@ a:hover {
 	margin-top: 50px;
 }
 .modal-gift__input {
+	width: 100%;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(164, 164, 164);
@@ -534,7 +535,6 @@ a:hover {
 	border-radius: 25px;
 	height: 52px;  
 	margin-bottom: 20px;
-	margin-right: 50px;
 	font-size: 24px;
 	font-family: "DIN Pro";
 	color: rgb(31, 36, 42);
@@ -602,7 +602,17 @@ a:hover {
 	width: 100%;
 	margin:15px auto 45px;
 }
-
+.modal-gift__label {
+	position: relative;
+	width: 100%;
+	padding-right: 50px;
+}
+.error {
+	position: absolute;
+	right: 70px;
+	top: 14px;
+	font-size: 18px;
+}
 
 
 
@@ -803,8 +813,11 @@ a:hover {
 	.modal-gift__form {
 		width: 100%;
 	}
-	.modal-gift__input, .button {
+	.button {
 		margin-left: 50px;
+	}
+	.modal-gift__label {
+		padding-left: 50px;
 	}
 	.modal-gift__strip {
 		padding: 17px 10px 6px;
@@ -871,9 +884,13 @@ a:hover {
 	.modal-gift__strip {
 	font-size: 20px;
 	}
-	.modal-gift__input, .button {
+	.button {
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+	.modal-gift__label {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	.modal-gift {
 		height: 625px;

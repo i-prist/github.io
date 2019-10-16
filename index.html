@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +9,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
 	<link rel="stylesheet" href="styles/Z15css.css">
 	<link rel="stylesheet" href="styles/font.css">
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=ea2ca1dd-2079-4795-a2c4-de80c57ec3ec&lang=ru_RU" type="text/javascript"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ea2ca1dd-2079-4795-a2c4-de80c57ec3ec&lang=ru_RU"
+		type="text/javascript"></script>
 	<title>G-Energy</title>
 </head>
 
@@ -178,19 +178,25 @@
 			</div>
 			<div class="modal-gift__img"><img src="./pic/modal-gift__img.jpg.png" alt=""></div>
 			<form action="" class="modal-gift__form" id="form-gift">
-				<input type="text" class="modal-gift__input" placeholder="ВАШЕ ИМЯ" required>
-				<input type="email" class="modal-gift__input" placeholder="ВАШ E-mail" required>
-				<select type="text" class="modal-gift__input">
-					<option value="0">ВЫБЕРИТЕ ВАШ ГОРОД</option>
-					<option value="2">МОСКВА</option>
-					<option value="3">САНКТ-ПЕТЕРБУРГ</option>
-					<option value="4">КРАСНОДАР</option>
-					<option value="5">НОВОСИБИРСК</option>
-					<option value="6">ЕКАТЕРИНБУРГ</option>
-					<option value="7">ИРКУТСК</option>
-					<option value="8">ВЛАДИВОСТОК</option>
-					<option value="9">Другой</option>
-				</select>
+				<label for="" class="modal-gift__label">
+					<input type="text" class="modal-gift__input name" placeholder="ВАШЕ ИМЯ">
+				</label>
+				<label for="" class="modal-gift__label">
+					<input type="email" class="modal-gift__input email" placeholder="ВАШ E-mail">
+				</label>
+				<label for="" class="modal-gift__label">
+					<select type="text" class="modal-gift__input city">
+						<option>ВЫБЕРИТЕ ВАШ ГОРОД</option>
+						<option>МОСКВА</option>
+						<option>САНКТ-ПЕТЕРБУРГ</option>
+						<option>КРАСНОДАР</option>
+						<option>НОВОСИБИРСК</option>
+						<option>ЕКАТЕРИНБУРГ</option>
+						<option>ИРКУТСК</option>
+						<option>ВЛАДИВОСТОК</option>
+						<option>Другой</option>
+					</select>
+				</label>
 				<button class="modal-gift__button button" id="take-gift">Продолжить</button>
 			</form>
 		</div>

@@ -1,5 +1,14 @@
 'use strict';
 
+ymaps.ready(init);
+
+function init() {
+    let myMap = new ymaps.Map("map", {
+        center: [55.76, 37.64],
+        zoom: 10
+    });
+}
+
 function takeGift() {
     const btnGift = document.getElementById('gift');
     const modalGift = document.querySelector('.modal-gift');
@@ -18,6 +27,42 @@ function takeGift() {
     });
 }
 
+function validate() {
+    const form = document.querySelector('.modal-gift__form');
+    let inputs = form.querySelectorAll('.modal-gift__input');
+
+    let generateError = function (text) {
+        let error = document.createElement('div');
+        error.className = 'error';
+        error.style.color = 'red';
+        error.innerHTML = text;
+        return error;
+    };
+
+    let removeValidation = function () {
+        let errors = form.querySelectorAll('error');
+
+        for (let i = 0; i < errors.length; i++) {
+            errors[i].remove();
+        }
+    };
+
+    let checkInputs = function () {
+        for (let i = 0; i < inputs.length; i++) {
+            if (!inputs[i].value) {
+                let error = generateError('Заполните поле');
+                form[i].parentElement.insertBefore(error, inputs[i]);
+            }
+        }
+    };
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        removeValidation();
+        checkInputs();
+    });
+}
+
 function thx() {
     const modalGift = document.querySelector('.modal-gift');
     const btnTake = document.getElementById('take-gift');
@@ -26,10 +71,9 @@ function thx() {
     const endBtn = document.getElementById('end');
     const shadow = document.getElementById('shadow');
 
-    btnTake.addEventListener('click', () => {
+    btnTake.addEventListener('onsubmit', () => {
         modalGift.style.display = 'none';
         modalThx.style.display = 'flex';
-       
     });
 
     closeBtn.addEventListener('click', () => {
@@ -44,13 +88,6 @@ function thx() {
     });
 }
 
-ymaps.ready(init);
-function init(){ 
-var myMap = new ymaps.Map("map", {
-    center: [55.76, 37.64],
-    zoom: 10
-     });
- }
-
 takeGift();
+validate();
 thx();
