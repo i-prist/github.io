@@ -260,6 +260,16 @@ a:hover {
 	font-family: "DIN Pro light";
     color: rgb(0, 0, 0);
 }
+.soft-bar {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.soft-bar__left, .soft-bar__right {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 .footer {
 	background-color: rgb(37, 37, 37);
 	font-size: 14px;
