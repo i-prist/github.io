@@ -220,6 +220,20 @@ a:hover {
 	color: rgb(255, 255, 255);
 	transition: 0.2s linear;
 }
+.carousel-inner {
+	background: url(../pic/slider_cont.gif);
+}
+.carousel-indicators {
+	bottom: -15px;
+}
+.w-100 {
+	display: flex!important;
+	justify-content: center;
+	max-height: 600px;
+}
+.slider-pic {
+	width: 80%;
+}
 .promo {
 	background: url(../pic/tehno_fon.gif);
 	text-align: center;
@@ -678,6 +692,9 @@ a:hover {
 @media (max-width: 991px) {
 	.container {
 		max-width: 890px;
+	}
+	.slider-pic {
+		width: 100%;
 	}
 	.connect {
 		display: none;

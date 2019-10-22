@@ -6,7 +6,7 @@ ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.751574, 37.573856],
             zoom: 11,
-            controls: ['zoomControl']
+            controls: ['zoomControl', 'searchControl']
         }, {
             searchControlProvider: 'yandex#search'
         }),
@@ -101,6 +101,19 @@ ymaps.ready(function () {
             iconLayout: 'default#image',
             iconImageHref: 'pic/marker_market.png',
             iconImageSize: [36, 38],
+        }),
+
+        myPlacemark8 = new ymaps.Placemark([55.016893, 82.979580], {
+            hintContent: 'Автогенная, 105к3',
+            balloonContentHeader: '<a href = "#">Автогенная улица, 105к3</a><br>' +
+                '<span class="description">G-Energy сервис</span>',
+            balloonContentBody: '<a href="tel:+7-123-456-78-90">+7 (123) 456-78-90</a><br/>' +
+                '<b>Время работы:</b> <br/> 10:00-19:00 без перерывов.',
+            balloonContentFooter: 'Информация предоставлена:<br/>ООО "Сиб-сервис"'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'pic/market_service.png',
+            iconImageSize: [36, 38],
         });
 
     myMap.geoObjects
@@ -110,7 +123,8 @@ ymaps.ready(function () {
         .add(myPlacemark4)
         .add(myPlacemark5)
         .add(myPlacemark6)
-        .add(myPlacemark7);
+        .add(myPlacemark7)
+        .add(myPlacemark8);
 
     myMap.behaviors.disable('scrollZoom');
 
