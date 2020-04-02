@@ -295,6 +295,7 @@ header .main-nav li {
 .top-product .title2 {
     background: url(../pic/top.png) no-repeat center center;
     background-size: 23rem 10rem;
+    margin: 20px 0 15px 0;
 }
 .title2 {
     font-size: 1.8rem;
