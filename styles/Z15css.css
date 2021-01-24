@@ -678,6 +678,7 @@ header {
 @media (max-width: 1400px) {
 	.navbar-expand-lg .navbar-nav .nav-link{
 		font-size: 20px;
+		padding-top: 21px;
 	}
 	.partners {
 		flex-wrap: wrap;
@@ -703,8 +704,8 @@ header {
 @media (max-width: 1230px) {
 	.navbar-expand-lg .navbar-nav .nav-link{
 		font-size: 15px;
-		padding-top: 32px;
-    	padding-bottom: 31px;
+		padding-top: 24px;
+    	padding-bottom: 21px;
 	}
 	.mods__text {
 		font-size: 22px;
@@ -728,11 +729,11 @@ header {
 	}
 	.navbar {
 		width: 100%;
-		background: url(../pic/logo.png) no-repeat top 30px right,
+		background: url(../pic/logo.png) no-repeat top 15px right,
 					url(../pic/header.gif);
 	}
 	.navbar-toggler {
-		padding: 10px 10px 10px 15px;
+		padding: 3px 10px 10px 15px;
 		margin-top: 20px;
 	}
 	.nav-item:first-child {
